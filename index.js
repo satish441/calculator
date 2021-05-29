@@ -14,10 +14,9 @@ buttons.map(button => {
       case '=':
         try {
           display.innerText=eval(display.innerText);
-        } catch (error) {
-          display.innerText="ERROR!";
+        } catch{
+          display.innerText='ERROR!';
         }
-        
         break;
       default:
         display.innerText+=e.target.innerText;
